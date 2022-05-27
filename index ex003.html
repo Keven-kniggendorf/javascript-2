@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Começando DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p class="par">Aqui vai o resultado</p>
+    <div id="msg">Clique em mim</div>
+    <p>Aprendendo a usar <strong>DOM</strong> em Javascript.</p>
+    <script>
+        //este codigo serve para selecionar elemntos como marca, ID, nome, classe, seletor.
+        //neste exemplo agora este codio seleciona a marca.
+        //getElementsByTagName(){}
+
+        //este irá selecionar pelo ID
+        // getElementById()
+
+        //por nome: getElementsByName()
+
+        //por classe: getElementsByClassName()
+
+        //para seletor(usado em maquinas recentes): querySelector
+
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'black'
+
+        var p = window.document.querySelector('p.par')
+        p.style.color = 'red' //este cod é usado no modo seletor aonde ele esta sendo usado em maquinas mais recentes.
+    </script>
+    
+    
+</body>
+</html>
